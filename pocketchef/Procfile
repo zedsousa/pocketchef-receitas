@@ -1,0 +1,1 @@
+web: gunicorn pocketchef.wsgi --log-file -
