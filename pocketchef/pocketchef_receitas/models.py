@@ -1,7 +1,7 @@
 from django.db import models
 from datetime import datetime
 # Create your models here.
-class receita(models.Model):
+class Receita(models.Model):
     nome_receita = models.CharField(max_length=200)
     ingredientes = models.TextField()
     modo_preparo = models.TextField()
