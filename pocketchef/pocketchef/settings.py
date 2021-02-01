@@ -21,8 +21,8 @@ DISABLE_COLLECTSTATIC=1
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'h0aiu_69@v1@w4kq2tv893mgx8e8z_7-77s-vp#mpifl+w03-)'
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'h0aiu_69@v1@w4kq2tv893mgx8e8z_7-77s-vp#mpifl+w03-)'
+#SECRET_KEY = os.environ.get('SECRET_KEY')
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'pocketcheff.herokuapp.com
 # Application definition
 
 INSTALLED_APPS = [
+    'pessoas',
     'pocketchef_receitas',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -136,3 +137,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
+
